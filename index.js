@@ -21,7 +21,7 @@ const SCOPES = [
   'https://mail.google.com/'
 ];
 
-
+// steps 1: reading the api credentaials and accessing the api by get call 
 
 app.get('/', async (req, res) => {
 
@@ -114,7 +114,7 @@ app.get('/', async (req, res) => {
     });
   }
   
-
+// function to create a label 
   async function createLabel(auth) {
     const gmail = google.gmail({version: 'v1', auth});
 
